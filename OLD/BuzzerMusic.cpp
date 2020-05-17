@@ -20,6 +20,9 @@ void BuzzerMusic::play(int *song)
 
 void BuzzerMusic::beep(int note, int duration)
 {
+ //if ((note == 0) || (duration == 0)) return;
+	//tone(_pinSensor, note, duration);
+
 	if (note == 0)
 	{
 		delay(duration);
@@ -32,5 +35,6 @@ void BuzzerMusic::beep(int note, int duration)
 		delay(50);
 
 	}
+
 
 }
